@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 15px;
+        background: linear-gradient(#2c2c2c, #7c7c7c);
+        
+    }
+#btn {
+    border-radius: 16px;
+      width: 200px;
+       height:30px ;
+}
+#user_input{
+    border-radius: 6px;
+     width: 200px;
+       height:30px ;
+}
+    #result{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+      flex-direction: column;
+      color: white;
+      font-size: 32px;
+     
+    }
+    
+    
+</style>
+<body>
+    <input type="text" id="user_input" placeholder="Введите ник">
+<button id="btn">Найти</button>
+
+<div id="result" style="margin-top:20px">
+    <img id="avatar" width="150" style="display:none; border-radius:10px">
+    <p id="login"></p>
+    <p id="user_id"></p>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
